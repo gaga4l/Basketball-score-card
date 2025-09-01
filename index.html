@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball score card</title>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/cursed-timer-ulil">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="hero flow">
+        <div class="countdown">
+            <h1 id="timer" class="time-font">00:10:00</h1>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item flow">
+                <h2 class="teams uppercase">Home</h2>
+                <div class="score-card">
+                    <h3 id="home-score" class="score time-font">0</h3>
+                </div>
+                <div class="point-container">
+                    <button class="points time-font">+1</button>
+                    <button class="points time-font">+2</button>
+                    <button class="points time-font">+3</button>
+                </div>
+            </div>
+            <div class="flex-item flow">
+                <h2 class="teams uppercase">Guest</h2>
+                <div class="score-card">
+                    <h3 id="guest-score" class="score time-font">0</h3>
+                </div>
+                <div class="point-container">
+                    <button class="points time-font">+1</button>
+                    <button class="points time-font">+2</button>
+                    <button class="points time-font">+3</button>
+                </div>
+            </div>
+        </div>
+        <button id="new-game" class="new-game uppercase">NEW GAME</button>
+    </div>
+</body>
+</html>

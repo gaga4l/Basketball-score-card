@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margin */
+
+body,
+p,
+img,
+picture,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* Reset Body */
+
+body {
+  font-family: "helvetica",sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: #1B244A;
+  line-height: 1.5;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+/* Reset form */
+select,
+textarea,
+button,
+label {
+  font: inherit;
+}
+
+/* Reset Images */
+
+img,
+picture,
+figure {
+  max-width: 100%;
+  display: block;
+}
+
+/* remove animations for people who've turned them off */
+
+*,
+*::before,
+*::after {
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+.time-font{
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.flow > *:where(:not(:first-child)) {
+    margin-top: 2rem;
+}
+
+
+
+
+
+.hero{
+    margin: 1rem auto;
+    text-align: center;
+    display: grid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+.flex-item:last-child{
+    margin-top: 2rem;
+}
+
+.countdown {
+    background-color: black;
+    color: greenyellow;
+    text-align: center;
+    align-content: center;
+    justify-self: center;
+    /* border: 1px solid red; */
+    width: 15rem;
+    height: 7rem;
+}
+
+#timer {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.teams {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.score-card {
+    background-color: black;
+    width: 10rem;
+    height: 8rem;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+}
+.score {
+    font-size: 5em;
+    color: #F94F6D;
+    font-weight: 500;
+}
+
+.point-container {
+    display: flex;
+    justify-self: center;
+    gap: .7rem;
+    justify-self: center;
+    
+}
+
+.points {
+    background: none;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.new-game {
+    background: none;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    color: white ;
+    font-size: 1.6rem;
+    font-weight: 700;
+
+}
+
+
+@media (min-width: 35rem){
+    .flex-container {
+        flex-direction: row;
+        gap: 5rem;
+    }
+    .flex-item:last-child{
+        margin-top: 0;
+    }
+}
