@@ -81,6 +81,10 @@ figure {
 .time-font{
     font-family: 'Cursed Timer ULiL', sans-serif;
 }
+.sans-serif{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
 .uppercase{
     text-transform: uppercase;
 }
@@ -161,7 +165,7 @@ figure {
     margin: 0 auto;
 }
 
-.new-game {
+.start-game {
     background: none;
     border: 2px solid #9AABD8;
     border-radius: 5px;
