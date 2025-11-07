@@ -43,9 +43,10 @@ startGame.addEventListener("click", () => {
             return
         }
 
-        let second = (remainder / 1000).toFixed(2)
-        timer.textContent = second
-    }, 50);
+        let minutes = Math.floor(remainder / 60000);
+        let seconds = Math.floor((remainder % 60000) / 1000);
+        timer.textContent = `${minutes}:${seconds.toString().padStart(2,'0')}`;
+    }, 1000);
 })
 
 
@@ -68,8 +69,8 @@ function start(){
 
 points.forEach(point => {
     point.addEventListener("click", (e) => {
-    console.log(e.srcElement.id)
-    switch (e.srcElement.id){
+    console.log(e.target.id)
+    switch (e.target.id){
         case "home-1-point":
             homeScoreCounter += 1
             homeScore.textContent = homeScoreCounter

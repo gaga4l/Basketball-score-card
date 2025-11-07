@@ -120,7 +120,7 @@ figure {
     text-align: center;
     align-content: center;
     justify-self: center;
-    /* border: 1px solid red; */
+    box-shadow: 0 0 10px greenyellow;
     width: 15rem;
     height: 7rem;
 }
@@ -144,7 +144,7 @@ figure {
     border-radius: 5px;
 }
 .score {
-    font-size: 5em;
+    font-size: clamp(3rem, 8vw, 5em);
     color: #F94F6D;
     font-weight: 500;
 }
@@ -173,6 +173,12 @@ figure {
     font-size: 1.6rem;
     font-weight: 700;
 
+}
+
+.points:hover, .start-game:hover {
+  background-color: #9AABD8;
+  color: black;
+  cursor: pointer;
 }
 
 
