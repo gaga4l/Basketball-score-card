@@ -1,4 +1,4 @@
-# Random Password Generator
+# Basketball Score Card 
 
 This project is part of the Scrimba's Solo Project section of the "The Front-End Developer Path", where the student is required to finish the project on their own without extensive help.
 
